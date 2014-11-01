@@ -11,6 +11,8 @@
 		1D4930A519F47EC200FAA840 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4930A419F47EC200FAA840 /* Images.xcassets */; };
 		1D4930A819F47EC200FAA840 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D4930A619F47EC200FAA840 /* MainMenu.xib */; };
 		1D4930B419F47EC200FAA840 /* inn2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4930B319F47EC200FAA840 /* inn2Tests.swift */; };
+		1D4930BE19F505AC00FAA840 /* business57.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D4930BD19F505AC00FAA840 /* business57.png */; };
+		1D4930C019F505B600FAA840 /* woman125.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D4930BF19F505B600FAA840 /* woman125.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		1D4930AD19F47EC200FAA840 /* inn2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = inn2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4930B219F47EC200FAA840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4930B319F47EC200FAA840 /* inn2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inn2Tests.swift; sourceTree = "<group>"; };
+		1D4930BD19F505AC00FAA840 /* business57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = business57.png; sourceTree = "<group>"; };
+		1D4930BF19F505B600FAA840 /* woman125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = woman125.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				1D4930A219F47EC200FAA840 /* AppDelegate.swift */,
 				1D4930A419F47EC200FAA840 /* Images.xcassets */,
 				1D4930A619F47EC200FAA840 /* MainMenu.xib */,
+				1D4930BD19F505AC00FAA840 /* business57.png */,
+				1D4930BF19F505B600FAA840 /* woman125.png */,
 				1D4930A019F47EC200FAA840 /* Supporting Files */,
 			);
 			path = inn2;
@@ -187,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4930A519F47EC200FAA840 /* Images.xcassets in Resources */,
+				1D4930C019F505B600FAA840 /* woman125.png in Resources */,
+				1D4930BE19F505AC00FAA840 /* business57.png in Resources */,
 				1D4930A819F47EC200FAA840 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +401,7 @@
 				1D4930B919F47EC200FAA840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D4930BA19F47EC200FAA840 /* Build configuration list for PBXNativeTarget "inn2Tests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +410,7 @@
 				1D4930BC19F47EC200FAA840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
