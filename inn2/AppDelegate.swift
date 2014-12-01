@@ -29,7 +29,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var inputINN: NSTextField!
     @IBOutlet weak var outDataOfBirth: NSTextField!
     @IBOutlet weak var outImageSex: NSImageView!
-    @IBOutlet weak var testOut: NSTextField!
     @IBOutlet weak var checkINN: NSButton!
     @IBOutlet weak var labelStatusMultiline: NSTextField!
     @IBAction func checkINN(sender: AnyObject) {
@@ -52,15 +51,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         {
             outDataOfBirth.stringValue = ""
             outImageSex.image = nil
-            testOut.stringValue = ""
             labelStatusMultiline.stringValue = ""
         }
         clearView()
-        
-        
-       // var test = inputINN.integerValue // для тестирования
-        //testOut.integerValue = test
-        
         
         
         // Разобрать в масив
@@ -78,9 +71,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 else
                 {errorsScalar += "," + String(scalar) }// ошибочные символы
             }
-            
         }
-        testOut.stringValue = outINN
         
         inputINN.stringValue = outINN //выводим измененую строку ИНН, тепеь только числа
         if errorsScalar != "" {

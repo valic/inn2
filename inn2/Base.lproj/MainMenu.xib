@@ -18,7 +18,6 @@
                 <outlet property="labelStatusMultiline" destination="kdg-21-ijz" id="46T-E1-05y"/>
                 <outlet property="outDataOfBirth" destination="OW5-uc-dH1" id="D9F-Y2-7su"/>
                 <outlet property="outImageSex" destination="hAT-Qk-a1u" id="KJa-wS-EY6"/>
-                <outlet property="testOut" destination="5E1-Yf-LPa" id="QSb-69-N1z"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -644,14 +643,14 @@
         <window title="Расшифровка ИНН" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="298" height="381"/>
+            <rect key="contentRect" x="335" y="390" width="298" height="225"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="298" height="381"/>
+                <rect key="frame" x="0.0" y="0.0" width="298" height="225"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAd-kd-Xgi">
-                        <rect key="frame" x="24" y="339" width="96" height="22"/>
+                        <rect key="frame" x="24" y="183" width="96" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="3415909190" id="z2S-EJ-m5z">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -659,7 +658,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OW5-uc-dH1">
-                        <rect key="frame" x="25" y="244" width="98" height="22"/>
+                        <rect key="frame" x="25" y="88" width="98" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" id="KSn-Te-o9k">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -667,7 +666,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BYz-YF-iAc">
-                        <rect key="frame" x="21" y="292" width="104" height="17"/>
+                        <rect key="frame" x="21" y="136" width="104" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Дата рождения" id="URm-By-c8a">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -675,7 +674,7 @@
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tqu-CW-XeI">
-                        <rect key="frame" x="140" y="333" width="150" height="32"/>
+                        <rect key="frame" x="140" y="177" width="150" height="32"/>
                         <buttonCell key="cell" type="push" title="Расшифровка ИНН" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="aVK-z6-lJa">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -688,11 +687,11 @@ Aw
                         </connections>
                     </button>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hAT-Qk-a1u">
-                        <rect key="frame" x="192" y="239" width="42" height="45"/>
+                        <rect key="frame" x="192" y="83" width="42" height="45"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="s5W-ya-qVq"/>
                     </imageView>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ag-tL-Ghw">
-                        <rect key="frame" x="198" y="292" width="30" height="17"/>
+                        <rect key="frame" x="198" y="136" width="30" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Пол" id="RZv-WB-yUh">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -700,23 +699,15 @@ Aw
                         </textFieldCell>
                     </textField>
                     <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADp-Vh-3DF">
-                        <rect key="frame" x="21" y="315" width="256" height="18"/>
+                        <rect key="frame" x="21" y="159" width="256" height="18"/>
                         <buttonCell key="cell" type="check" title="ИНН выдан налоговой с ошибкой" bezelStyle="regularSquare" imagePosition="left" inset="2" id="g6g-Vc-G65">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdg-21-ijz">
-                        <rect key="frame" x="7" y="115" width="285" height="116"/>
+                        <rect key="frame" x="7" y="10" width="285" height="65"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="kgh-2m-34b">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5E1-Yf-LPa">
-                        <rect key="frame" x="64" y="61" width="154" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Cpu-lI-oAO">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -724,7 +715,7 @@ Aw
                     </textField>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="559" y="462.5"/>
+            <point key="canvasLocation" x="559" y="384.5"/>
         </window>
     </objects>
 </document>
