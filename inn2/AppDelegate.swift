@@ -20,7 +20,6 @@ extension NSDate
         self.init(timeInterval:0, sinceDate:d!)
     }
 }
-//123
 
 
 @NSApplicationMain
@@ -28,12 +27,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var inputINN: NSTextField!
-    @IBOutlet weak var labelStatus: NSTextField!
     @IBOutlet weak var outDataOfBirth: NSTextField!
     @IBOutlet weak var outImageSex: NSImageView!
-
     @IBOutlet weak var testOut: NSTextField!
     @IBOutlet weak var checkINN: NSButton!
+    @IBOutlet weak var labelStatusMultiline: NSTextField!
     @IBAction func checkINN(sender: AnyObject) {
 
         var mas = [Int] ()
@@ -54,13 +52,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         {
             outDataOfBirth.stringValue = ""
             outImageSex.image = nil
-           // labelStatus.stringValue = ""
+            testOut.stringValue = ""
+            labelStatusMultiline.stringValue = ""
         }
         clearView()
         
         
-        var test = inputINN.integerValue // для тестирования
-        testOut.integerValue = test
+       // var test = inputINN.integerValue // для тестирования
+        //testOut.integerValue = test
         
         
         
@@ -74,19 +73,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             else
             {
-                errorsScalar += String(scalar) + "," // ошибочные символы
+                if errorsScalar == ""
+                { errorsScalar = String(scalar) }
+                else
+                {errorsScalar += "," + String(scalar) }// ошибочные символы
             }
             
         }
+        testOut.stringValue = outINN
         
         inputINN.stringValue = outINN //выводим измененую строку ИНН, тепеь только числа
         if errorsScalar != "" {
-        labelStatus.stringValue = "Удалены недопустимые символы \(errorsScalar)"
+            labelStatusMultiline.stringValue = "\n Удалены недопустимые символы \(errorsScalar)"
         }
         if mas.count != 10
         {
-            clearView()
-            labelStatus.stringValue += " ИНН должен быть длиною 10 символов."
+            labelStatusMultiline.stringValue += "\n ИНН должен быть длиною 10 символов."
         }
         else
         {
@@ -111,8 +113,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             
         if mas[9] != control() && !checkStateBoolean
         {
-                clearView()
-                labelStatus.stringValue += "ИНН введен не правильно"
+                labelStatusMultiline.stringValue += "ИНН введен не правильно"
         }
         else
         {
@@ -135,14 +136,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let components = NSDateComponents()
         components.day = (mas[0].description + mas[1].description + mas[2].description + mas[3].description + mas[4].description).toInt()!-1
         var date = myCalendar.dateByAddingComponents(components, toDate: NSDate(dateString:"1900-01-01"), options: nil)
-        
-       
-            outDataOfBirth.stringValue = NSDateFormatter.localizedStringFromDate(date!, dateStyle: .MediumStyle, timeStyle: .NoStyle)
+        outDataOfBirth.stringValue = NSDateFormatter.localizedStringFromDate(date!, dateStyle: .MediumStyle, timeStyle: .NoStyle)
             
-    
-    
-    
-    
+     
     
     
     

@@ -15,7 +15,7 @@
             <connections>
                 <outlet property="checkINN" destination="ADp-Vh-3DF" id="lRb-ge-9sY"/>
                 <outlet property="inputINN" destination="QAd-kd-Xgi" id="2Q3-0u-y23"/>
-                <outlet property="labelStatus" destination="3is-GI-Pk7" id="Sv0-ny-GQx"/>
+                <outlet property="labelStatusMultiline" destination="kdg-21-ijz" id="46T-E1-05y"/>
                 <outlet property="outDataOfBirth" destination="OW5-uc-dH1" id="D9F-Y2-7su"/>
                 <outlet property="outImageSex" destination="hAT-Qk-a1u" id="KJa-wS-EY6"/>
                 <outlet property="testOut" destination="5E1-Yf-LPa" id="QSb-69-N1z"/>
@@ -687,14 +687,6 @@ Aw
                             <action selector="checkINN:" target="Voe-Tx-rLC" id="uFe-39-Grx"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3is-GI-Pk7">
-                        <rect key="frame" x="22" y="182" width="264" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" allowsEditingTextAttributes="YES" id="m6x-8N-5L8">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hAT-Qk-a1u">
                         <rect key="frame" x="192" y="239" width="42" height="45"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" id="s5W-ya-qVq"/>
@@ -714,8 +706,16 @@ Aw
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdg-21-ijz">
+                        <rect key="frame" x="7" y="115" width="285" height="116"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="kgh-2m-34b">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5E1-Yf-LPa">
-                        <rect key="frame" x="21" y="214" width="154" height="17"/>
+                        <rect key="frame" x="64" y="61" width="154" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Cpu-lI-oAO">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
